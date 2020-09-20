@@ -1,31 +1,103 @@
+@font-face {
+    font-family: Caveat;
+    src: url("../fonts/caveat.woff2") format("opentype");
+}
+
 * {
     box-sizing: border-box;
+    font-weight: bold;
+    margin: 0;
+    font-size: 1vw;
 }
+
+@media screen and (max-width: 600px) {
+  * {
+    font-size: 2.5vw;
+ }
+}
+
 header {
-    background-image: url("img/fondo1.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url("../img/fondo1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 80%;
+    font-family: sans-serif;
     color: whitesmoke;
+    text-align: center;
+    padding: 1em;
+}
+
+header img {
+	width: 7em;
+	margin: 1em;
+}
+
+header div {
+	background: #00696d;
+	padding: 1.4em;
+	max-width: 33em;
+	height: 7.3em; 
+	text-align: center;
+	margin: auto;
+} 
+
+.promotion {
+	font-size: 0.85em;
+	margin-top: -0.2em;
+	margin-bottom: 0.7em;
+	white-space: pre-line;
 }
 
 footer {
-    background-image: url("img/fondo2.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url("../img/fondo2.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: 0% 70%;
     color: #bfce4f;
+    text-align: center;
+    padding: 2.5em;
 }
 
-.row {  
-    display: flex;
-    
-	}
-	
-
-.main {
-    flex: 80%; 
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    }
-    
 footer img {
     border-radius: 50%;
     padding: 5px;
-    width: 150px;
+    width: 50px;
+}
+
+.quote {
+	font-family: Caveat;
+	font-size: 155%;
+}
+
+.row {  
+	display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f4f4f4;
+    color: #00696d;
+	}
+	
+.side{
+    display: -webkit-flex;
+    display: flex;
+	align-items: center;
+	margin-left: 1em;
+}
+
+.main {
+	-webkit-flex: 80%;
+    -ms-flex: 80%;
+    flex: 80%; 
+    text-align: right;
+    font-size: 80%;
+    margin: 1.5em;
     }
+    
+.main p {
+	text-align: center;
+}
+
+.main img {
+	width: 40%;
+	margin-top: 1.5em;
+}
