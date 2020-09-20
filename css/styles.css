@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+header {
+    background-image: url("img/fondo1.jpg");
+    color: whitesmoke;
+}
+
+footer {
+    background-image: url("img/fondo2.jpg");
+    color: #bfce4f;
+}
+
+.row {  
+    display: flex;
+    
+	}
+	
+
+.main {
+    flex: 80%; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    }
+    
+footer img {
+    border-radius: 50%;
+    padding: 5px;
+    width: 150px;
+    }
